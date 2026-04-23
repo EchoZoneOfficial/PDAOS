@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>PDA OS Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="pda">
+        <!-- Левая колонка: задачи -->
+        <div id="tasks-panel">
+            <h2>Tasks</h2>
+            <ul id="tasks-list">
+                <li class="task">Kill the bloodsuckers</li>
+                <li class="task">Kill Strelok</li>
+                <li class="task">Find the family rifle</li>
+            </ul>
+        </div>
+
+        <!-- Правая колонка: карта -->
+        <div id="map-panel">
+            <div id="map-header">
+                <h2>Map of Krasnoyarsk</h2>
+                <button id="theme-toggle">Switch Theme</button>
+            </div>
+            <div id="map">
+                <img src="assets/krasnoyarsk_map.png" alt="Krasnoyarsk Map">
+            </div>
+        </div>
+    </div>
+
+    <!-- Нижняя навигация -->
+    <div id="bottom-nav">
+        <button class="tab-btn" data-tab="tasks">Tasks</button>
+        <button class="tab-btn" data-tab="map">Map</button>
+        <button class="tab-btn" data-tab="diary">Diary</button>
+        <button class="tab-btn" data-tab="settings">Settings</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
